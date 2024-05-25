@@ -1,0 +1,19 @@
+Hi!
+let me walk you through my code and what it does, this program mainly does 3 things:
+1.Gaussian blur filter, it creates a gaussian kernel given a specific size and deviation
+factor(sigma) that youll provide, heres how you can run it:
+python ./Filter.py G 3 -p 2 cat.PNG -o catblur.PNG
+this command applies a 3*3 gaussian kernal with sigma=2 on the img, its then saved
+I added the input and output images with the same titles.
+2.edge detection: I chose sobel edge detection filter with a fixed size 3*3,5*5 or 7*7,
+there are 3 direction flags:
+H: horizontal, example run: python ./Filter.py E 3 -p H img2.PNG -o img2H.PNG
+V: vertical, example run :  python ./Filter.py E 3 -p V img2.PNG -o img2V.PNG
+HV: both , example run :    python ./Filter.py E 3 -p HV img2.PNG -o img2HV.PNG
+heres just another example to show how well it works:
+python ./Filter.py E 3 -p HV lena.PNG -o lenaout.PNG
+3. Selection filter, these dont really have a filter kernel, just an empty kernel that
+convolutes(scans) and 'selects' pixels gives a certain flag:
+min: example run:  python ./Filter.py S 3 -p min min.PNG -o minout.PNG
+max: example run:  python ./Filter.py S 3 -p max max.PNG -o maxout.PNG
+median: example run: python ./Filter.py S 3 -p median median.PNG -o medianout.PNG
