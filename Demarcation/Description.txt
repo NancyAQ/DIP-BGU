@@ -1,0 +1,19 @@
+
+A small description of my code:
+the code does the following steps:
+1.load image and binarize it.
+2.threshes image to inverse it(need foreground pixels to be 1 to compare with the SE)
+3.analyze elements in the image and create a SE in a size similar to that of the demarcaions
+erode them using that SE, them dilate the image just in case erosion caused thinning
+on the letters using the same SE.
+all functions used for erosion and dilation(combined known as opening) have been implemented
+from scratch as needed.
+4.inverse the image again to return it to its original appearance and display it.
+you can run this code on ex1 using the following command:
+python ./UnDemarcate.py ex1.PNG -o ex1out.PNG
+to not save it run the following command:
+python ./UnDemarcate.py ex1.PNG
+I provided 4 examples with their outputs, each example has a different size.
+I also included the example jidad provided and its output:
+python ./UnDemarcate.py img.PNG -o imgout.PNG
+
