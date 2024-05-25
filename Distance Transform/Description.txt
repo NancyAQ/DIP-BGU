@@ -1,0 +1,13 @@
+
+Hi there, this is a quick run through of what my code does,
+the code mainly uses euclidean distance calculations to get accurate distance results as the python built
+in function does too, using both forward and backward scans+ 8 adjacency calculation helps achieve accuracy
+as well.
+the file includes an example pic(example.jpg) and:
+1- the output of the inner choice (inner.jpg)
+2- the output of the outer choice (outer.jpg)
+3- the output of the signed choice (signed.jpg)
+you can get each by running the next command in the powershell:
+python ./DistanceTransform.py example.jpg 15 type(I,O,S) type.jpg
+overall runtime is O(mn).
+
