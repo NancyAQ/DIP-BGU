@@ -1,0 +1,13 @@
+
+Hi,this is a small description of my code, 
+the code has 4 fucntions, 2 of which are used to enhance images(equalization,matching)
+the other two are for calculating and normalizing histograms.
+to see how equalization works on images I equalized the histogram of girl.PNG using 
+the following command:  python ./Histogram.py E girl.PNG -o girlEqualized.PNG 
+and saved it in girlEqualized.PNG, you can see that the image looks much better and the details
+got enhanced.
+to see how matching looks like you can run the followwing command:
+ python ./Histogram.py M darkflower.PNG lightflower.PNG -o matched.PNG
+ in which I match the histogram of the dark flowers to the lighter one which creates a more enhanced 
+ looking flower with distinciton that gets saved in matched.PNG.
+ 
